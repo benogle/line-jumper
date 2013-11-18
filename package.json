@@ -1,7 +1,7 @@
 {
   "name": "line-jumper",
   "main": "./lib/line-jumper",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "private": true,
   "description": "A short description of your package",
   "repository": {
