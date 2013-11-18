@@ -1,7 +1,7 @@
 # DOCUMENT: link to keymap documentation
 '.editor':
-  'ctrl-up': 'line-jumper:move-up'
-  'ctrl-down': 'line-jumper:move-down'
+  'alt-up': 'line-jumper:move-up'
+  'alt-down': 'line-jumper:move-down'
 
-  'ctrl-shift-up': 'line-jumper:select-up'
-  'ctrl-shift-down': 'line-jumper:select-down'
+  'alt-shift-up': 'line-jumper:select-up'
+  'alt-shift-down': 'line-jumper:select-down'
