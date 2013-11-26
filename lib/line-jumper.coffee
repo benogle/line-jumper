@@ -1,18 +1,18 @@
 LINES_TO_JUMP = 10
 
 getEditSession = ->
-  atom.rootView.getActiveView()?.activeEditSession
+  atom.workspaceView.getActiveView()?.activeEditSession
 
 module.exports =
   activate: (state) ->
-    atom.rootView.command 'line-jumper:move-up', =>
+    atom.workspaceView.command 'line-jumper:move-up', =>
       getEditSession()?.moveCursorUp(LINES_TO_JUMP)
 
-    atom.rootView.command 'line-jumper:move-down', =>
+    atom.workspaceView.command 'line-jumper:move-down', =>
       getEditSession()?.moveCursorDown(LINES_TO_JUMP)
 
-    atom.rootView.command 'line-jumper:select-up', =>
+    atom.workspaceView.command 'line-jumper:select-up', =>
       getEditSession()?.selectUp(LINES_TO_JUMP)
 
-    atom.rootView.command 'line-jumper:select-down', =>
+    atom.workspaceView.command 'line-jumper:select-down', =>
       getEditSession()?.selectDown(LINES_TO_JUMP)
