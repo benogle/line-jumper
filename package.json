@@ -5,6 +5,7 @@
   "private": true,
   "description": "Move the cursor and select 10 lines at a time",
   "repository": "https://github.com/atom/line-jumper",
+  "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
