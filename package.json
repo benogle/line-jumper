@@ -1,7 +1,7 @@
 {
   "name": "line-jumper",
   "main": "./lib/line-jumper",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "private": true,
   "description": "Move the cursor and select 10 lines at a time",
   "repository": "https://github.com/atom/line-jumper",
