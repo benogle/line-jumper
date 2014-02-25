@@ -9,6 +9,9 @@ This packages adds 4 commands available via the following keybindings:
   * `alt-shift-up` to select up 10 lines
   * `alt-shift-down` to select down 10 lines
 
+You can change the number of lines jumped via the `line-jumper.numberOfLines`
+config setting, defaults to 10.
+
 In action:
 
 ![omgwhoa][gif]
