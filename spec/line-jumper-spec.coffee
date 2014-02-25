@@ -5,10 +5,12 @@ describe "LineJumper", ->
   editor = null
   beforeEach ->
     atom.workspaceView = new WorkspaceView()
-    pack = atom.packages.activatePackage("line-jumper", immediate: true)
+
+    waitsForPromise ->
+      atom.packages.activatePackage("line-jumper")
 
     atom.workspaceView.openSync('sample.js')
-    editor = atom.workspaceView.getActiveView()
+    editor = atom.workspaceView.getActiveView().getEditor()
 
   describe "moving and selecting down", ->
     it "moves down", ->
