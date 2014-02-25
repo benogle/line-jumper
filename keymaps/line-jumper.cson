@@ -1,4 +1,3 @@
-# DOCUMENT: link to keymap documentation
 '.editor':
   'alt-up': 'line-jumper:move-up'
   'alt-down': 'line-jumper:move-down'

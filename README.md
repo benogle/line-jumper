@@ -1,22 +1,20 @@
-# LineJumper
+# Line Jumper package
 
-Adds commands to move your cursor and select 10 lines at a time. This adds 4
-commands available via keycommands.
+Adds commands to move your cursor and select 10 lines at a time in Atom.
 
-```coffeescript
-'.editor':
-  'ctrl-up': 'line-jumper:move-up'
-  'ctrl-down': 'line-jumper:move-down'
+This packages adds 4 commands available via the following keybindings:
 
-  'ctrl-shift-up': 'line-jumper:select-up'
-  'ctrl-shift-down': 'line-jumper:select-down'
-```
+  * `alt-up` to move the cursor up 10 lines
+  * `alt-down` to move the cursor down 10 lines
+  * `alt-shift-up` to select up 10 lines
+  * `alt-shift-down` to select down 10 lines
 
 In action:
 
 ![omgwhoa][gif]
 
-Your head just exploded didn't it? This is a clinically proven 1000%
-productivity boost, I promise. No, really.
+Your head just exploded didn't it? :grinning: :boom:
+
+This is a clinically proven 1000% productivity boost, I promise. No, really.
 
 [gif]: https://f.cloud.github.com/assets/69169/1451208/13d67f38-4291-11e3-8ae3-badbb633593b.gif
