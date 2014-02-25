@@ -3,14 +3,8 @@
   "main": "./lib/line-jumper",
   "version": "0.7.1",
   "private": true,
-  "description": "A short description of your package",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/atom/line-jumper.git"
-  },
-  "bugs": {
-    "url": "https://github.com/atom/line-jumper/issues"
-  },
+  "description": "Move the cursor and select 10 lines at a time",
+  "repository": "https://github.com/atom/line-jumper",
   "engines": {
     "atom": ">27.0"
   },
