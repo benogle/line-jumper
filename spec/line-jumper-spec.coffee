@@ -38,3 +38,17 @@ describe "LineJumper", ->
 
       bufferRange = editor.getSelectedBufferRange()
       expect(bufferRange).toEqual [[2,0],[12,0]]
+
+  describe "when the line-jumper.numberOfLines config is set", ->
+    it "jumps by the configured number of lines", ->
+      atom.config.set('line-jumper.numberOfLines', 5)
+      atom.workspaceView.trigger 'line-jumper:move-down'
+      expect(editor.getCursorBufferPosition()).toEqual [5,0]
+
+      atom.config.set('line-jumper.numberOfLines', 2)
+      atom.workspaceView.trigger 'line-jumper:move-down'
+      expect(editor.getCursorBufferPosition()).toEqual [7,0]
+
+      atom.config.set('line-jumper.numberOfLines', -1)
+      atom.workspaceView.trigger 'line-jumper:move-down'
+      expect(editor.getCursorBufferPosition()).toEqual [8,0]

@@ -1,18 +1,22 @@
-LINES_TO_JUMP = 10
-
 getEditor = ->
   atom.workspaceView.getActiveView()?.editor
 
+getLinesToJump = ->
+  atom.config.getPositiveInt('line-jumper.numberOfLines', 1)
+
 module.exports =
-  activate: (state) ->
-    atom.workspaceView.command 'line-jumper:move-up', =>
-      getEditor()?.moveCursorUp(LINES_TO_JUMP)
+  configDefaults:
+    numberOfLines: 10
 
-    atom.workspaceView.command 'line-jumper:move-down', =>
-      getEditor()?.moveCursorDown(LINES_TO_JUMP)
+  activate: ->
+    atom.workspaceView.command 'line-jumper:move-up', ->
+      getEditor()?.moveCursorUp(getLinesToJump())
 
-    atom.workspaceView.command 'line-jumper:select-up', =>
-      getEditor()?.selectUp(LINES_TO_JUMP)
+    atom.workspaceView.command 'line-jumper:move-down', ->
+      getEditor()?.moveCursorDown(getLinesToJump())
 
-    atom.workspaceView.command 'line-jumper:select-down', =>
-      getEditor()?.selectDown(LINES_TO_JUMP)
+    atom.workspaceView.command 'line-jumper:select-up', ->
+      getEditor()?.selectUp(getLinesToJump())
+
+    atom.workspaceView.command 'line-jumper:select-down', ->
+      getEditor()?.selectDown(getLinesToJump())
