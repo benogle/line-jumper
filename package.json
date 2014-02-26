@@ -1,7 +1,7 @@
 {
   "name": "line-jumper",
   "main": "./lib/line-jumper",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "private": true,
   "description": "Move the cursor and select 10 lines at a time",
   "repository": "https://github.com/benogle/line-jumper",
