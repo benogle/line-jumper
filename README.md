@@ -20,4 +20,4 @@ Your head just exploded didn't it? :grinning: :boom:
 
 This is a clinically proven 1000% productivity boost, I promise. No, really.
 
-[gif]: https://f.cloud.github.com/assets/69169/1451208/13d67f38-4291-11e3-8ae3-badbb633593b.gif
+[gif]: https://f.cloud.github.com/assets/69169/2274551/db5ea7d6-9f1d-11e3-90e7-a66d0e09a02c.gif
