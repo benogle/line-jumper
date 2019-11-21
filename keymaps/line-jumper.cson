@@ -1,4 +1,4 @@
-'atom-text-editor':
+'atom-text-editor:not([mini])':
   'alt-up': 'line-jumper:move-up'
   'alt-down': 'line-jumper:move-down'
 
